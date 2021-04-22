@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>S3 CREATION</title>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="download.png" type="image/png" />
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    
+    scroll-behavior: smooth;
+}
+
+.header {
+  overflow: hidden;
+  background: black;
+  padding: 10px 5px;
+  padding-right: 90px;
+
+  
+  }
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  letter-spacing: .2rem;
+}
+
+.header a:hover {
+ color: crimson;
+}
+
+.header-left {
+  float: left;
+  padding:0 0 0 40px;
+}
+
+.header-left img{
+  width: 100px;
+  height: 60px;
+}
+  
+
+.header-right {
+  float: right;
+  padding:10 20px;
+}
+
+/*hero section*/
+
+#hero .container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero{
+    background-image: url('3.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1{
+    font-size: 4rem;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    color: black;
+}
+
+#mydiv{
+  animation: mymove 7s infinite;
+}
+
+/*end hero section*/
+
+/*about section*/
+
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 20px;
+    min-height: 100vh;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: crimson;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+
+#about .section-title h1{
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+}
+#about h2{
+  font-size: 2rem;
+font-weight: 500;
+letter-spacing: .2rem;
+margin-bottom: 10px;
+}
+
+#about  p{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+
+}
+/*end about section*/
+
+/*service section*/
+
+#services .services{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+
+.column1{
+  float: left;
+  width: 33.33%;
+  height: 30%;
+  padding: 5px;
+  margin-left: 10%;
+  position: relative;
+  color: white;
+}
+
+.column1 img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.column1 img:hover{
+  box-shadow: 0 0 3px 4px rgba(0, 140, 186, 0.5);
+}
+
+.column2{
+  float: right;
+  width: 33.33%;
+  height: 30%;
+  padding: 5px;
+  margin-right: 10%;
+  position: relative;
+  color: white;
+}
+.column2 img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.column2 img:hover{
+  box-shadow: 0 0 3px 4px rgba(0, 140, 186, 0.5);
+}
+
+.column3{
+  float: left;
+  width: 33.33%;
+  height: 30%;
+  padding: 5px;
+  margin-left: 10%;
+  position: relative;
+  color: white;
+}
+.column3 img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.column3 img:hover{
+  box-shadow: 0 0 3px 4px rgba(0, 140, 186, 0.5);
+}
+
+.column4{
+  float: right;
+  width: 33.33%;
+  height: 30%;
+  padding: 5px;
+  margin-right: 10%;
+  position: relative;
+  color: white;
+}
+.column4 img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.column4 img:hover{
+  box-shadow: 0 0 3px 4px rgba(0, 140, 186, 0.5);
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+
+  .bottom-right {
+  position: absolute;
+  bottom: 25px;
+  right: 16px;
+  background-color:black;
+  opacity: 0.7;
+  height:25px;
+  width: 350px;
+  padding-top: 5px;
+  float: center;
+}
+.bottom-right:hover{
+  background-color: red;
+  color: black;
+  opacity: 0.7;
+}
+
+/*end service section*/
+
+/*contact section*/
+
+#contact .container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .contact-items{
+    width:400px;
+}
+#contact .contact-item{
+    width:80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 16px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon{
+    width:70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+
+}
+
+
+/*end contact section*/
+
+/*footer*/
+
+#footer{
+    background-color: gray;
+  
+}
+#footer .footer{
+    height:70px;
+    flex-direction: column;
+   
+}
+#footer p{
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  padding-top: 20px;
+}
+
+
+
+/*footer*/
+
+
+@keyframes mymove{
+  50%{
+    text-shadow: 10px 20px 30px crimson;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  
+  h1.section-title{
+    font-size: 3rem;
+}
+
+
+  #hero h1{
+  font-size: 3rem;
+}
+
+
+
+
+  .header-right {
+    float: none;
+  }
+  .hero{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .bottom-right{
+    float: none;
+    width: 50px;
+    right: 9spx;
+    font-size: 5px;
+    height: 20px;
+  }
+  
+}
+
+@media only screen and (min-width:768px){
+  #contact .contact{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+}
+
+#contact .contact-items{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:0;
+    padding: 30px;
+}
+#contact .contact-item{
+    width: 30%;
+    margin: 20px;
+    flex-direction: row;
+}
+#contact .contact-item .icon{
+    height:100px;
+    width:100px;
+}
+#contact .contact-item .icon img{
+    object-fit: contain;
+}
+#contact .contact-item .contact-info{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <img src="LOGO1.png">
+  </div>
+  
+  <div class="header-right">
+    <a href="#hero">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</div>
+
+<section id="hero">
+    <div class="hero container">
+        <div id="mydiv">
+            <h1 style= "text-align : center"; style= "font-family: Copperplate, Papyrus, fantasy;"> S3<br/> CREATIONS</h1>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+  <div class="about container">
+    <h1 class="section-title">About</h1>
+    <h2><span style="color: crimson;">E</span>vent <span style="color: crimson;">M</span>anagement <span style="color: crimson;">T</span>eam</h2>
+    <p>Hello, my name is Swathi. I am based in Hospet. 
+       We promise you to deliver the best to make it a day to remember for you.
+      Quality is our biggest strength and we make sure your special day has the "WOW FACTOR". 
+      Our event planning services are ready to meet your needs.<br/> Share Your Dreams & We Will Make Them Come True.</p>
+  </div>
+</section>
+
+
+<section id="services">
+  <div class="services container">
+    <h1 class="section-title"><span style="color: crimson;">S</span>ervices</h1>
+      <div class="row">
+        <div class="column1">
+          <img src="10.jpg" style="width: 100%;">
+          <div class="bottom-right"><b>BIRTHDAY PARTIES</b></div>
+        </div>
+
+        <div class="column2">
+          <img src="5.jpg" style="width: 100%;">
+          <div class="bottom-right"><b>NAMING CEREMONY</b></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column3">
+          <img src="9.jpg" style="width: 100%;">
+          <div class="bottom-right"><b>MEHANDI FUNCTION</b></div>
+        </div>
+        <div class="column4">
+          <img src="8.jpg" style="width: 100%;">
+          <div class="bottom-right"><b>HALDI FUNCTION</b></div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section id="contact">
+  <div class="contact container">
+      <div><h1 class="section-title">contact <span>info</span></h1></div>
+
+    <div class="contact-items">
+
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/phone.png"/></div>
+          <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>7812924420</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/email.png"/></div>
+          <div class="contact-info">
+              <h1>Email</h1>
+             <h2><a href= "mailto=aliveluswathi1@gmail.com" style="color: black;">aliveluswathi1@gmail.com</a></h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/address.png"/></div>
+          <div class="contact-info">
+              <h1>Address</h1>
+              <h2>14th cross, 22nd ward,<br/>3rd block, vinayaka nagar<br/>Hospet 
+              </h2>
+          </div>
+        </div>
+     </div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="footer container">
+    <div>
+      <p>Copyright © 2021 swathi. All Rights Reserved</p>
+    </div>
+    
+  </div>
+</section>
+ 
+
+
+</body>
+ </html>
